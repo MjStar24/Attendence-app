@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Attendence App</title>
+    </head>
+
+    <body>
+
+        <h1><a href="/attendence">ATTENDENCE</a></h1>
+        <h2><a href="/numbers">TOTAL STUDENTS</a></h2>
+
+        <h2>Student present</h2>
+        <%if (student.length>0){%>
+            <%student.forEach((s)=>{%>
+                <ul>
+                <a href="/<%=s._id%>"><li><h3><%=s.Name%></h3></li></a>
+                </ul>
+            <%})%>
+        <%}%>
+        
+    </body>
+</html>
